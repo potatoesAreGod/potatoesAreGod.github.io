@@ -4,18 +4,17 @@
 body {
   font-family: "Figtree", sans-serif;
   background-color: #252525;
+  text-align: center;
 }
 
 header {
-  width: auto;
+  justify-content: center;
   background-color: #111;
-  padding-left: 30%;
-  padding-top: 10px;
   display: flex;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 38px;
   font-family: "Nabla", cursive;
 }
 
@@ -25,8 +24,8 @@ p {
 }
 
 .header-img {
-  max-height: 80px;
-  padding: 17px;
+  max-height: 70px;
+  padding: 15px;
 }
 
 .main-img {
