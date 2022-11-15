@@ -19,8 +19,30 @@ h1 {
 }
 
 h2,
-p {
+h3,
+p,
+a {
   color: azure;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: azure;
+}
+
+a:visited {
+  color: lightgreen;
+}
+
+a:hover {
+  color: aqua;
+}
+
+a:active {
+  color: darkcyan;
 }
 
 .header-img {
@@ -30,6 +52,18 @@ p {
 
 .main-img {
   width: 100%;
+}
+
+.container {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+}
+
+/* Logotyper */
+.grid-img {
+  width: 10%;
+  justify-self: center;
 }
 
 .italics {
