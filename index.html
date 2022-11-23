@@ -8,18 +8,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jorden är platt!</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/earth.png" type="image/x-icon" />
   </head>
   <body>
     <header>
-      <img class="header-img" src="../img/earth.png" alt="Planeten jorden" />
+      <img class="header-img" src="img/earth.png" alt="Planeten jorden" />
       <h1>Flat Earth is real!</h1>
-      <img class="header-img" src="../img/earth.png" alt="Planeten jorden" />
+      <img class="header-img" src="img/earth.png" alt="Planeten jorden" />
     </header>
     <section>
       <img
         class="main-img"
-        src="../img/flat-earth.png"
+        src="img/flat-earth.png"
         alt="Bildbevis på att jorden är platt"
       />
     </section>
@@ -67,15 +67,24 @@
         >
       </div>
     </main>
-    <footer>
-      <p>Prenumerera på nyhetsbrevet!</p>
-      <input type="email" placeholder="Skriv in din epost..." />
-      <input
-        type="submit"
-        value="Prenumerera"
-        onclick="alert('Visste du att jorden är egentligen inte platt!')"
-      />
-      <p>Skapad av mig :)</p>
+    <footer class="grid-container">
+      <div class="grid-item left">
+        <p>Prenumerera på nyhetsbrevet!</p>
+      </div>
+      <div class="grid-item right">
+        <p>Skapad av <span class="italics">mig</span> :)</p>
+      </div>
+      <div class="grid-item left">
+        <input type="email" placeholder="Skriv in din epost..." />
+      </div>
+      <div class="grid-item left">
+        <input
+          class="button"
+          type="submit"
+          value="Prenumerera"
+          onclick="alert('Error!')"
+        />
+      </div>
     </footer>
   </body>
 </html>
