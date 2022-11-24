@@ -37,16 +37,14 @@ a {
   text-decoration: none;
 }
 
-a:link {
-  color: azure;
-}
-
 a:hover {
   color: aqua;
+  text-decoration: underline;
 }
 
 a:active {
   color: darkcyan;
+  text-decoration: underline;
 }
 
 .italics {
@@ -106,6 +104,16 @@ input {
   background: azure;
   font-family: "Figtree", sans-serif;
   padding: 3px;
+}
+
+.button:hover {
+  background: #eee;
+  text-decoration: underline;
+}
+
+.button:active {
+  background: #ccc;
+  text-decoration: underline;
 }
 
 /* Responsive design */
