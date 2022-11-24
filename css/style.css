@@ -29,7 +29,8 @@ h1 {
 h2,
 h3,
 p,
-a {
+a,
+li {
   color: azure;
 }
 
@@ -56,6 +57,12 @@ a:active {
   width: 100%;
 }
 
+iframe {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  width: 40vw;
+  height: 25vw;
+}
+
 /* Länkar till andra sidor */
 .container {
   display: grid;
@@ -68,10 +75,40 @@ a:active {
   justify-self: center;
 }
 
+/* Form */
+form {
+  background: linear-gradient(#252525, #111);
+  padding-bottom: 2rem;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 30vw;
+  width: 40vw;
+}
+
+fieldset input {
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+}
+
+.slider input {
+  margin: 0 15px;
+}
+
+.memberBtn {
+  margin-top: 15px;
+}
+
 /* Footer */
 footer {
   background: #111;
-  margin-top: 2rem;
   padding-bottom: 2rem;
 }
 
@@ -94,16 +131,24 @@ footer {
 }
 
 input {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
-  width: 25%;
   padding: 5px;
+  border: none;
+}
+
+footer input {
+  width: 30%;
+}
+
+.newsletterBtn {
+  margin-top: 5px;
+  padding: 3px;
 }
 
 .button {
-  margin-top: 5px;
-  background: azure;
   font-family: "Figtree", sans-serif;
-  padding: 3px;
+  background: azure;
 }
 
 .button:hover {
@@ -112,7 +157,15 @@ input {
 }
 
 .button:active {
-  background: #ccc;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
   text-decoration: underline;
 }
 

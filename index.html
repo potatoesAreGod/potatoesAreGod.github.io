@@ -31,22 +31,32 @@
       </p>
       <p>Kolla på filmen nedan för att få reda på mer.</p>
       <iframe
-        width="465"
-        height="262"
         src="https://www.youtube.com/embed/VNqNnUJVcVs"
         title="Is Earth Actually Flat?"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <!-- Länkar till andra sidor -->
       <h2>Läs mer om platt jord</h2>
       <div class="container">
         <h3 class="item">Wikipedia</h3>
         <h3 class="item">Nationalencyklopedin</h3>
         <h3 class="item">Flat Earth Society</h3>
-        <img class="item grid-img" src="img/wiki.png" alt="Wikipedia logotyp" />
-        <img class="item grid-img" src="img/ne.png" alt="NE.se" />
-        <img class="item grid-img" src="img/fe-soc.png" alt="En platt jord" />
+        <a href="https://sv.wikipedia.org/wiki/Platt_jord" target="_blank"
+          ><img
+            class="item grid-img"
+            src="img/wiki.png"
+            alt="Wikipedia logotyp"
+        /></a>
+        <a
+          href="https://www.ne.se/uppslagsverk/encyklopedi/l%C3%A5ng/jorden"
+          target="_blank"
+          ><img class="item grid-img" src="img/ne.png" alt="NE.se"
+        /></a>
+        <a href="https://theflatearthsociety.org/home" target="_blank"
+          ><img class="item grid-img" src="img/fe-soc.png" alt="En platt jord"
+        /></a>
         <a
           class="item"
           href="https://sv.wikipedia.org/wiki/Platt_jord"
@@ -66,20 +76,53 @@
           >Läs mer på Flat Earth Society</a
         >
       </div>
+      <!-- Varför jorden är platt -->
+      <article>
+        <h2>Tre argument till varför jorden är platt</h2>
+        <ol>
+          <li>yes</li>
+          <li>
+            ett citat från någon på stan <q>jorden är platt, gud sa det!</q>
+          </li>
+          <li>mmmm yes</li>
+        </ol>
+      </article>
+      <!-- Formulär för att bli medlem -->
+      <form>
+        <fieldset>
+          <h2>Bli en av oss!</h2>
+          <h3>Vad heter du?</h3>
+          <input type="text" name="name" placeholder="Ditt namn..." required />
+          <h3>Hur stark är din tro på att jorden är platt?</h3>
+          <div class="slider">
+            <p>0</p>
+            <input type="range" name="faith" value="80" />
+            <p>10</p>
+          </div>
+          <h3>Vilken är din favoritfärg?</h3>
+          <input type="color" name="favColor" value="#123456" />
+          <input
+            class="button memberBtn"
+            type="submit"
+            value="Bli medlem"
+            onclick="alert('Error!')"
+          />
+        </fieldset>
+      </form>
     </main>
     <footer class="grid-container">
       <div class="grid-item left">
         <p>Prenumerera på nyhetsbrevet!</p>
       </div>
       <div class="grid-item right">
-        <p>Skapad av <span class="italics">mig</span> :)</p>
+        <p>Skapad av <span class="italics">mig</span> &#128511;</p>
       </div>
       <div class="grid-item left">
         <input type="email" placeholder="Skriv in din epost..." />
       </div>
       <div class="grid-item left">
         <input
-          class="button"
+          class="button newsletterBtn"
           type="submit"
           value="Prenumerera"
           onclick="alert('Error!')"
