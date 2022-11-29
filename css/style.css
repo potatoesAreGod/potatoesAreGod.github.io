@@ -1,5 +1,11 @@
+/* Typsnitt från Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+::selection {
+  background: azure;
+  color: #252525;
+}
 
 body {
   font-family: "Figtree", sans-serif;
@@ -8,7 +14,7 @@ body {
   text-align: center;
 }
 
-/* Header */
+/* Sidhuvud */
 header {
   justify-content: center;
   background: #111;
@@ -20,12 +26,12 @@ header {
   padding: 15px;
 }
 
+/* Stil för all text */
 h1 {
   font-size: 38px;
   font-family: "Nabla", cursive;
 }
 
-/* Text */
 h2,
 h3,
 p,
@@ -59,8 +65,14 @@ a:active {
 
 iframe {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
   width: 40vw;
   height: 25vw;
+}
+
+article {
+  width: 50vw;
+  margin: 50px 25vw;
 }
 
 /* Länkar till andra sidor */
@@ -75,23 +87,20 @@ iframe {
   justify-self: center;
 }
 
-/* Form */
+/* Bli medlem-formulär */
 form {
   background: linear-gradient(#252525, #111);
   padding-bottom: 2rem;
 }
 
 fieldset {
-  border: none;
+  border: 3px solid azure;
+  border-radius: 3px;
   display: flex;
   flex-direction: column;
   text-align: left;
   margin-left: 30vw;
   width: 40vw;
-}
-
-fieldset input {
-  width: 100%;
 }
 
 .slider {
@@ -106,7 +115,7 @@ fieldset input {
   margin-top: 15px;
 }
 
-/* Footer */
+/* Sidfot */
 footer {
   background: #111;
   padding-bottom: 2rem;
@@ -157,27 +166,29 @@ footer input {
 }
 
 .button:active {
-  background: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    purple
-  );
+  background: #aaa;
   text-decoration: underline;
 }
 
-/* Responsive design */
+/* För mobilsidor */
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: unset;
+  iframe {
+    width: 90vw;
+    height: 200px;
   }
 
-  iframe {
-    width: 75%;
-    height: 200px;
+  article {
+    width: 90vw;
+    margin-left: 1vw;
+  }
+
+  fieldset {
+    margin-left: 5vw;
+    width: 80vw;
+  }
+
+  .header-img {
+    display: none;
   }
 
   .grid-container {
