@@ -40,7 +40,8 @@ h2,
 h3,
 p,
 a,
-li {
+li,
+label {
   color: azure;
 }
 
@@ -97,6 +98,10 @@ form {
   padding-bottom: 2rem;
 }
 
+form input {
+  width: 100%;
+}
+
 fieldset {
   border: 3px solid azure;
   border-radius: 3px;
@@ -115,8 +120,13 @@ fieldset {
   margin: 0 15px;
 }
 
+.personalData {
+  display: flex;
+}
+
 .memberBtn {
   margin-top: 15px;
+  cursor: pointer;
 }
 
 /* Sidfot */
@@ -146,7 +156,7 @@ footer {
 input {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   border-radius: 3px;
-  padding: 5px;
+  height: 28px;
   border: none;
 }
 
@@ -157,6 +167,7 @@ footer input {
 .newsletterBtn {
   margin-top: 5px;
   padding: 3px;
+  cursor: pointer;
 }
 
 .button {
