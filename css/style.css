@@ -7,6 +7,10 @@
   color: #252525;
 }
 
+:focus-visible {
+  outline: 2px solid #252525;
+}
+
 body {
   font-family: "Figtree", sans-serif;
   margin: 0;
@@ -100,6 +104,7 @@ form {
 
 form input {
   width: 100%;
+  height: 28px;
 }
 
 fieldset {
@@ -122,6 +127,12 @@ fieldset {
 
 .personalData {
   display: flex;
+  align-self: center;
+}
+
+.checkbox {
+  height: 100%;
+  width: 50px;
 }
 
 .memberBtn {
@@ -155,13 +166,14 @@ footer {
 
 input {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  accent-color: #374dad;
   border-radius: 3px;
-  height: 28px;
   border: none;
 }
 
 footer input {
   width: 30%;
+  height: 28px;
 }
 
 .newsletterBtn {
